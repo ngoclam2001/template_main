@@ -38,7 +38,7 @@ public class HomeController : Controller
                 },
             Muc4 = new Dictionary<int, string>
                 {
-                    { 0, "/img_re.png" }
+                    { 0, "~/image/img_re.png" }
                 },
             IsCheckMuc2 = true,
             IsCheckMuc3 = true
