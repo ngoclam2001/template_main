@@ -2,6 +2,7 @@
     ViewData["Title"] = "Home Page";
 }
 
+@* load data from controler *@
 @model template_main.Models.DataLand;
 
 @if(Model != null)
@@ -207,6 +208,6 @@
     </div>
 
 }else{
-    @Model.Id;
+    <p> Không có dữ liệu.</p>
 }
 
