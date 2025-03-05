@@ -1,0 +1,110 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container" id="main_content">
+    <div class="top_info">
+        <div class="img_top">
+            <img src="~/image/img_re.png" alt="logo">
+        </div>
+        <div class="text_center">
+            <h1 class="text_top text_uppercase">thông tin quyền sử dụng đất,</h1>
+            <h1 class="text_uppercase text_top">quyền sở hữu tài sản liên quan với đất</h1>
+            <span class="fs-10">(Thông tin này được lấy từ mã QR in trên Giấy xác nhận)</span>
+        </div>
+        <div class="text_right fs-10 code_pdf">
+            <!-- load from js -->
+        </div>
+    </div>
+    <div class="content">
+        <ol class="list_info">
+            <li class="text_bold fs-10">
+                Người sử dụng đất, chủ sử dụng tài sản gắn liền với đất:
+            </li>
+            <div class="list_person">
+                <!-- danh sach nguoi su dung -->
+            </div>
+            <li class="text_bold">
+                Thông tin thửa đất:
+            </li>
+            <!-- TH1: Giay chung nhan cap cho mot thua dat -->
+            <div class="list_land land_first_case hide">
+                <!-- load from js -->
+            </div>
+            <!-- TH2: Giay chung nhan cho nhieu thua dat nong nghiep -->
+            <div class="list_land land_second_case hide">
+                <!-- load from js -->
+            </div>
+            <li class="text_bold">
+                Thông tin tài sản gắn liền với đất:
+            </li>
+            <!-- Cac thong tin lien qan -->
+            <div class="land_info_asset">
+                <!-- load from js -->
+            </div>
+            <!-- TH1: Giay chung nhan can ho hoac cong trinh -->
+            <div class="first_case_asset">
+                <table class="table_asset_first">
+                    <tbody>
+                        <tr>
+                            <th>
+                                <p>Tên tài sản</p>
+                            </th>
+                            <th>
+                                <p>Diện tích xây dựng(m2)</p>
+                            </th>
+                            <th>
+                                <p>Diện tích sử dụng(m2)</p>
+                            </th>
+                            <th>
+                                <p>Hình thức sở hữu</p>
+                            </th>
+                            <th>
+                                <p>Cấp công trình</p>
+                            </th>
+                            <th>
+                                <p>Thời hạn sở hữu</p>
+                            </th>
+                        </tr>
+                        <!-- load from js -->
+                    </tbody>
+                </table>
+            </div>
+            <!--TH2: Giay chung nhan can ho -->
+            <div class="second_case_asset">
+                <table class="table_asset_second">
+                    <tbody>
+                        <tr>
+                            <th>
+                                <p>Tên tài sản</p>
+                            </th>
+                            <th>
+                                <p>Diện tích sàn xây dựng(m2)</p>
+                            </th>
+                            <th>
+                                <p>Diện tích sử dụng(m2)</p>
+                            </th>
+                            <th>
+                                <p>Hình thức sở hữu</p>
+                            </th>
+                            <th>
+                                <p>Thời hạn sở hữu</p>
+                            </th>
+                        </tr>
+                        <!-- load from js -->
+                    </tbody>
+                </table>
+            </div>
+            <li class="text_bold" id="page2el">
+                Sơ đồ thửa đất, tài sản gắn liền với đất:
+            </li>
+            <div class="image_land">
+                <!-- load from js -->
+            </div>
+        </ol>
+    </div>
+</div>
+<div class="btn_docx">
+    <!-- <button id="downloadBtn">Tạo và tải xuống DOC</button> -->
+    <button class="btn_print">Tạo và tải xuống PDF</button>
+</div>

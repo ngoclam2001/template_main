@@ -1,0 +1,160 @@
+@page {
+    size: 7in 9.25in;
+    margin: 27mm 16mm 27mm 16mm;
+}
+
+body, ol, ul, li, th, tr, tbody, table, p, h1, h2, h3, h4, h5, h6 {
+    margin: 0 auto;
+}
+
+th, td {
+    text-align: center;
+    border: 1px solid black;
+}
+
+table {
+    border-spacing: 0;
+    margin: unset;
+    width: 100%;
+}
+
+body {
+    height: 842px;
+    width: 595px;
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+}
+
+.text_uppercase {
+    text-transform: uppercase;
+}
+
+.top_info {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.img_top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .img_top img {
+        width: 60px;
+    }
+
+.text_top {
+    font-size: 12px;
+    margin: 0;
+}
+
+.text_center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.text_right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.text_bold {
+    font-weight: bold;
+}
+
+.list_person {
+    display: flex;
+    flex-direction: column;
+}
+
+.first_land_info {
+    display: flex;
+    justify-content: space-between;
+}
+
+    .first_land_info p {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+
+.image_land img {
+    max-width: 100%;
+}
+
+li {
+    margin-bottom: 4px;
+    ;
+}
+
+    li:not(:first-child) {
+        margin-top: 4px;
+    }
+
+p, span {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+th {
+    font-weight: normal;
+}
+
+.fs-10, li, span, p {
+    font-size: 10px;
+}
+
+.hide {
+    display: none;
+}
+
+.list_info {
+    padding-left: 16px;
+}
+
+.btn_docx {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+#downloadBtn {
+    background-color: aquamarine;
+    cursor: pointer;
+}
+
+@media print {
+    .no-print, .no-print * {
+        display: none !important;
+    }
+
+    html, body {
+        width: 100%;
+        height: auto;
+        font-size: 10px;
+    }
+
+    @page {
+        size: 7in 9.25in;
+        margin: 27mm 16mm 27mm 16mm;
+    }
+}
